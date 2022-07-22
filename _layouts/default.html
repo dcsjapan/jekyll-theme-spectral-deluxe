@@ -18,6 +18,9 @@
 		<meta name="description" content="{{ site.description }}" />
 		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 		<noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
+		{% if site.custom_css %}
+			<link rel="stylesheet" href="{{ site.custom_css | prepend: '/assets/css/' | relative_url }}" />
+		{% endif %}
 		{% if page.image %}
 			{% include image-style.html %}
 		{% endif %}

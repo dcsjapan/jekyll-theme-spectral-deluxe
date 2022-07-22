@@ -24,9 +24,27 @@ theme:          jekyll-theme-spectral-deluxe
 index_desc:     true # This enables use of the site description (above) instead of a page title for the landing page.
                      # Leave it blank to use the page title (or just the site title when the page title is also null).
 
+font_family:         # the font family you want to use for the site; defaults to "'Open Sans', Helvetica, sans-serif".
+webfont_url:         # the URL for the webfont you want to use for the site; defaults to Open Sans from Google.
+                     # (Include the following weights and styles: 400, 400italic, 600, 600italic, 800, and 800italic.)
+
 banner_image:        # the filename of the site banner image; defaults to 'banner.jpg'.
 image_source:        # the path where image files are stored; defaults to '/assets/images/'.
                      # You may specify an external server as an absolute URL, e.g. "https://example.com/assets/".
+
+colors:         # Enter hex values in quotes (e.g. "#ffffff" for white) for the settings below to customize the color of...
+  header:            # the site header
+  footer:            # the site footer
+  menu:              # the offcanvas menu
+  major:             # the "major text" section of the landing page
+  recent:            # the "recent posts" section of the landing page
+  tiles:             # the "text tiles" section of the landing page
+  page:              # the main body of pages and posts
+  button:            # the primary buttons (i.e. the ones that are red by default)
+
+custom_css:          # the name of your custom CSS file (e.g. "custom.scss") if you want to use one for this site.
+                     # Jekyll will look for the file specified here in the '/assets/css/' directory.
+                     # NOTE: Changes to banner image, font family, and background colors may override config settings.
 
 recent_tiles:   3    # the number of tiles in the "recent posts" section of the landing page
                      # (The theme supports a maximum of ten recent posts in this section.)
@@ -57,18 +75,3 @@ email_url:      ""
 
 sass:
   style: compressed
-
-# Use these plugins:
-plugins:
-  - jekyll-liquify
-
-# Exclude the following items from processing:
-exclude:
-  - LICENSE.txt
-  - README.md
-
-# Include this collection of demo content:
-collections:
-  demo_pages:
-    output: true
-    permalink: /spectral/:name/

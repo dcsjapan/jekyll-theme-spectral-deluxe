@@ -1,11 +1,63 @@
 ---
 ---
 // Setting site background image as configured...
-{% assign banner = site.banner_image | default: 'banner.jpg' %}
-{% assign source = site.image_source | default: '/assets/images/' %}
+{% assign banner_img = site.banner_image | default: 'banner.jpg' %}
+{% assign image_src = site.image_source | default: '/assets/images/' %}
+$bg-image: "{{ banner_img | prepend: image_src | relative_url }}";
 
-$bg-image: "{{ banner | prepend: source | relative_url }}";
+// Setting site webfont selection as configured...
+{% assign font_url = site.webfont_url | default: 'https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic' %}
+@import url('{{ font_url }}');
 
+// Importing main Spectral styles...
 @import 'spectral-main';
 
-// Custom SASS/CSS may be added below.
+body, input, select, textarea {
+  font-family: {{ site.font_family | default: "'Open Sans', Helvetica, sans-serif" }};
+}
+
+// Setting custom theme colors as configured...
+#header {
+  background-color: {{ site.colors.header | default: "#2e3842" }};
+}
+
+#footer {
+  background-color: {{ site.colors.footer | default: "#2e3842" }};
+}
+body.landing {
+  #footer {
+    background-color: darken(transparentize({{ site.colors.footer | default: "#2e3842" }}, 0.1), 8);
+  }
+}
+
+#menu {
+  background-color: {{ site.colors.menu | default: "#21b2a6" }};
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  &.primary {
+    background-color: {{ site.colors.primary | default: "#ed4933" }};
+    &:hover {
+      background-color: lighten({{ site.colors.button | default: "#ed4933" }}, 5) !important;
+    }
+  }
+}
+
+.wrapper {
+  &.style1 {
+    background-color: {{ site.colors.major | default: "#21b2a6" }};
+  }
+  &.style2 {
+    background-color: {{ site.colors.recent | default: "#2e3842" }};
+  }
+  &.style3 {
+    background-color: {{ site.colors.tiles | default: "#505393" }};
+  }
+  &.style5 {
+    background-color: {{ site.colors.page | default: "#ffffff" }};
+  }
+}
