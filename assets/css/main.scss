@@ -20,6 +20,9 @@ body, input, select, textarea {
 body {
   background-color: {{ site.colors.body | default: "#2e3842" }};
 }
+#banner:after {
+  background-color: {{ site.colors.body | default: "#2e3842" }};
+}
 
 #header {
   background-color: {{ site.colors.header | default: "#2e3842" }};
