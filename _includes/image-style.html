@@ -1,0 +1,11 @@
+<!-- The default layout uses this template to insert post/page images into the background of the article header. -->
+
+<style type="text/css">
+	{% assign source = site.image_source | default: '/assets/images/' %}
+	#main > header {
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("{{ page.image | prepend: source | relative_url }}");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("{{ page.image | prepend: source | relative_url }}");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("{{ page.image | prepend: source | relative_url }}");
+		background-image: linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("{{ page.image | prepend: source | relative_url }}");
+  }
+</style>

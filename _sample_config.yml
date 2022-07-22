@@ -1,0 +1,72 @@
+#	Spectral Deluxe for Jekyll (https://github.com/dcsjapan/jekyll-theme-spectral-deluxe)
+#	by Dominion (https://www.dcsjapan.com)
+#	Free for personal and commercial use under CC-BY-3.0 (https://creativecommons.org/licenses/by/3.0/)
+#
+#	Based on Spectral (https://html5up.net/spectral)
+#	by HTML5 UP (https://html5up.net | @ajlkn)
+#	Free for personal and commercial use under CC-BY-3.0 (https://html5up.net/license)
+
+# SITE SETTINGS
+
+title:          Spectral Deluxe
+
+description:    A Jekyll theme based on Spectral by HTML5 UP
+
+url:            "" # the base hostname & protocol for your site, e.g. "http://example.com"
+baseurl:        "" # the subpath of your site, e.g. "/blog"
+
+language:       en # See https://www.w3schools.com/tags/ref_language_codes.asp
+
+# THEME SETTINGS
+
+index_desc:     true # This enables use of the site description (above) instead of a page title for the landing page.
+                     # Leave it blank to use the page title (or just the site title when the page title is also null).
+
+banner_image:        # the filename of the site banner image; defaults to 'banner.jpg'.
+image_source:        # the path where image files are stored; defaults to '/assets/images/'.
+                     # You may specify an external server as an absolute URL, e.g. "https://example.com/assets/".
+
+recent_tiles:   3    # the number of tiles in the "recent posts" section of the landing page
+                     # (The theme supports a maximum of ten recent posts in this section.)
+
+date_format:    "%B %d, %Y"
+
+excerpt_separator: <!--end_excerpt-->
+
+# SITE OWNER SETTINGS
+
+owner:          Your Name Here
+
+social_icons:   true # This setting enables use the social media icons in the footer. Leave it blank to disable icons.
+                     # The order of the icons can be changed by rearranging the entries in 'social-icons.yml' datafile.
+
+facebook_url:   ""
+dribble_url:    ""
+github_url:     ""
+gitlab_url:     ""
+instagram_url:  ""
+linkedin_url:   ""
+pinterest_url:  ""
+slack_url:      ""
+twitter_url:    ""
+email_url:      ""
+
+# BUILD SETTINGS
+
+sass:
+  style: compressed
+
+# Use these plugins:
+plugins:
+  - jekyll-liquify
+
+# Exclude the following items from processing:
+exclude:
+  - LICENSE.txt
+  - README.md
+
+# Include this collection of demo content:
+collections:
+  demo_pages:
+    output: true
+    permalink: /spectral/:name/

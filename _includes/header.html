@@ -1,0 +1,32 @@
+      <!-- Header -->
+      <header id="header" {% if page.layout == 'landing' %} class="alt" {% endif %}>
+        <h1><a href="{{ '/' | relative_url }}">{{ site.title | default: 'Spectral Deluxe' }}</a></h1>
+
+        <nav id="nav">
+          <ul>
+            <li class="special">
+              <a href="#menu" class="menuToggle"><span>{{ site.data.common.menu }}</span></a>
+              <div id="menu">
+                <noscript>
+      						<nav>
+      							<ul>
+      								<li class="special">
+      									<a href="#" class="menuToggleShut"></a>
+      								</li>
+      							</ul>
+      						</nav>
+              	</noscript>
+                {% for menu in site.data.navigation %}
+                  <h3>{{ menu.title }}</h3>
+                  <ul>
+                    {% for item in menu.items %}
+                      <li><a href="{{ item.link | relative_url }}">{{ item.text }}</a></li>
+                    {% endfor %}
+                  </ul>
+                {% endfor %}
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+      </header>

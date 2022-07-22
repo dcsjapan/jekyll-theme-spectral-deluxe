@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<!--
+  Spectral Deluxe for Jekyll (https://github.com/dcsjapan/jekyll-theme-spectral-deluxe)
+  by Dominion (https://www.dcsjapan.com)
+  Free for personal and commercial use under CC-BY-3.0 (https://creativecommons.org/licenses/by/3.0/)
+
+  Based on Spectral (https://html5up.net/spectral)
+  by HTML5 UP (https://html5up.net | @ajlkn)
+  Free for personal and commercial use under CC-BY-3.0 (https://html5up.net/license)
+-->
+
+<html lang="{{ site.language | default: 'en' }}">
+
+	<head>
+    <title>{{ site.title | default: 'Spectral Deluxe' }}{% if page.layout == 'landing' and site.index_desc %} - {{ site.description }}{% else %}{% if page.title %} - {{ page.title }}{% endif %}{% endif %}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="{{ site.description }}" />
+		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+		<noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
+		{% if page.image %}
+			{% include image-style.html %}
+		{% endif %}
+	</head>
+
+  <body class="{% if page.layout == 'landing' or 'error' %}landing{% endif %} is-preload">
+
+    <!-- Page Wrapper -->
+		<div id="page-wrapper">
+
+			{% include header.html %}
+
+      {{ content }}
+
+			<!-- Footer -->
+      <footer id="footer">
+
+        {% if site.social_icons %}
+          <ul class="icons">
+            {% for icon in site.data.social-icons %}
+              {% assign link = icon.label | downcase | append: '_url' %}
+              {% if site[link] %}
+                <li><a href="{{ site[link] }}" class="icon {{ icon.type }}"><span class="label">{{ icon.label }}</span></a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <ul class="copyright">
+          <li>&copy; {{ site.owner }}. All rights reserved.</li>
+        </ul>
+        <ul class="copyright">
+          <li>Design by <a href="https://html5up.net">HTML5 UP</a></li>
+          <li>Adapted for Jekyll by <a href="https://github.com/dcsjapan">Dominion</a></li>
+        </ul>
+      </footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/jquery.scrollex.min.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/jquery.scrolly.min.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/browser.min.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/breakpoints.min.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/util.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,20 @@
+title: >-
+  Communicate your message clearly<br />
+  with some bold, emphatic text.
+
+text: >-
+  Like the text tiles and call-to-action (below the "recent post" tiles),<br />
+  this major text section gets its content from an easy-to-edit data file.
+
+icons:
+  - type: fa-gem
+    style: style1
+    label: Gems
+
+  - type: fa-heart
+    style: style2
+    label: Love
+
+  - type: solid fa-code
+    style: style3
+    label: Code

@@ -1,0 +1,40 @@
+      <!-- Section Two on sample landing page: Recent Posts -->
+
+      {% if site.recent_tiles > 10 %}
+        {% assign max = 10 %}
+      {% else %}
+        {% assign max_tiles = site.recent_tiles %}
+      {% endif %}
+      {% assign tile_count = 0 %}
+      {% assign source = site.image_source | default: '/assets/images/' %}
+
+      <section id="two" class="wrapper alt style2">
+
+        {% for post in site.posts limit: max_tiles %}
+          {% assign default_select = tile_count | modulo: 3 | plus: 1 %}
+          {% assign default_pic = default_select | string | prepend: '/assets/images/spectral/pic0' | append: '.jpg' %}
+
+          <section class="spotlight">
+
+            <div class="image">
+              <a href="{{ post.url | relative_url }}">
+                {% if post.image %}
+                  <img src="{{ post.image | prepend: source | relative_url }}" alt="" />
+                {% else %}
+                  <img src="{{ default_pic | relative_url }}" alt="" />
+                {% endif %}
+              </a>
+            </div>
+
+            <div class="content">
+              <h2>{{ post.title }}</h2>
+              <p>{{ post.blurb }}</p>
+              <a href="{{ post.url | relative_url }}" class="button">{{ site.data.common.read_more }}</a>
+            </div>
+
+          </section>
+
+          {% assign tile_count = tile_count | plus: 1 %}
+        {% endfor %}
+
+      </section>

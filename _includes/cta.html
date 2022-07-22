@@ -1,0 +1,18 @@
+      <!-- CTA on sample landing page -->
+
+      <section id="cta" class="wrapper style4">
+        <div class="inner">
+
+          <header>
+            <h2>{{ include.datafile.title }}</h2>
+            <p>{{ include.datafile.text }}</p>
+          </header>
+
+          <ul class="actions stacked">
+            {% for button in include.datafile.buttons limit: 10 %}
+              <li><a href="{{ button.link }}" class="button {{ button.style }}">{{ button.text }}</a></li>
+            {% endfor %}
+          </ul>
+
+        </div>
+      </section>

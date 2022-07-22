@@ -1,0 +1,27 @@
+- title: Menu
+  items:
+    - text: Home
+      link: /
+
+    - text: Generic
+      link: /spectral/generic/
+
+    - text: Blog
+      link: /spectral/blog/
+
+    - text: Error
+      link: /spectral/error/
+
+    - text: Elements
+      link: /spectral/elements/
+
+- title: Blogroll
+  items:
+    - text: Favorite Blog
+      link: https://www.example.com
+
+    - text: Another Blog
+      link: https://www.example.net
+
+    - text: Ye Third Blog
+      link: https://www.example.org

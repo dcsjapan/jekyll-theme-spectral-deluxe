@@ -1,0 +1,23 @@
+      <!-- Section Three on sample landing page: Text Tiles -->
+
+      <section id="three" class="wrapper style3 special">
+        <div class="inner">
+          <header class="major">
+            <h2>{{ include.datafile.title }}</h2>
+            <p>{{ include.datafile.text }}</p>
+          </header>
+
+          <ul class="features">
+
+            {% for item in include.datafile.tiles limit: 10 %}
+
+            <li class="icon {{ item.icon }}">
+              <h3>{{ item.header }}</h3>
+              <p>{{ item.text }}</p>
+            </li>
+
+            {% endfor %}
+          </ul>
+
+        </div>
+      </section>

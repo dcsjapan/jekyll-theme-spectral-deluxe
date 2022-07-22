@@ -1,0 +1,11 @@
+---
+---
+// Setting site background image as configured...
+{% assign banner = site.banner_image | default: 'banner.jpg' %}
+{% assign source = site.image_source | default: '/assets/images/' %}
+
+$bg-image: "{{ banner | prepend: source | relative_url }}";
+
+@import 'spectral-main';
+
+// Custom SASS/CSS may be added below.

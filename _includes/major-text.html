@@ -1,0 +1,21 @@
+      <!-- Section One on sample landing page: Major Text -->
+
+      <section id="one" class="wrapper style1 special">
+        <div class="inner">
+
+          <header class="major">
+            <h2>{{ include.datafile.title }}</h2>
+            <p>{{ include.datafile.text }}</p>
+          </header>
+
+          <!-- To omit the icons, just comment out everything below "icons:" in major-text.yml -->
+          {% if include.datafile.icons %}
+            <ul class="icons major">
+              {% for icon in include.datafile.icons limit: 10 %}
+                <li><span class="icon {{ icon.type }} major {{ icon.style }}"><span class="label">{{ icon.label }}</span></span></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+
+        </div>
+      </section>

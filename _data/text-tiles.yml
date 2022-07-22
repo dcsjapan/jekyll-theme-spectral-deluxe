@@ -1,0 +1,30 @@
+title: This could be a "features" list
+
+text: >-
+  Eventually these tiles will list the features of this Jekyll theme;<br />
+  for the present, please enjoy all the colorful Font Awesome icons!
+
+tiles:
+  - icon: fa-paper-plane
+    header: Arcu accumsan
+    text: Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
+
+  - icon: solid fa-laptop
+    header: Ac Augue Eget
+    text: Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
+
+  - icon: solid fa-code
+    header: Mus Scelerisque
+    text: Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
+
+  - icon: solid fa-headphones-alt
+    header: Mauris Imperdiet
+    text: Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
+
+  - icon: fa-heart
+    header: Aenean Primis
+    text: Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
+
+  - icon: fa-flag
+    header: Tortor Ut
+    text: Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.

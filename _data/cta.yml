@@ -1,0 +1,14 @@
+title: The call to action!
+
+text: >-
+  Offer your visitors a choice of things to do next:
+  Activate the blog? Or visit the theme's repo?
+
+buttons:
+  - link: "/spectral/blog/"
+    style: fit primary
+    text: Activate
+
+  - link: "https://github.com/dcsjapan/jekyll-theme-spectral-deluxe"
+    style: fit
+    text: Learn More

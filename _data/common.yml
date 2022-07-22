@@ -1,0 +1,6 @@
+byline_blog: "posted by <strong>{{ post.author }}</strong> on <strong>{{ post.date | date: site.date_format }}</strong>"
+byline_post: "posted by <strong>{{ page.author }}</strong> on <strong>{{ page.date | date: site.date_format }}</strong>"
+
+menu: Menu
+
+read_more: Read More

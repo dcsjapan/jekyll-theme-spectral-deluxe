@@ -1,0 +1,13 @@
+landing:
+  arrow:
+    link: "#one"      # This anchor is at the top of Section One of the demo landing page (major-text.html).
+    text: Learn More
+
+  primary:
+    link: '/spectral/blog/'
+    text: Activate
+
+error:
+  primary:
+    link: '/'
+    text: Reinitialize

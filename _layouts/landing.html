@@ -1,0 +1,27 @@
+---
+layout: default
+---
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+
+          {{ content }}
+
+          <ul class="actions special">
+            <li><a href="{{ site.data.buttons[page.layout].primary.link | relative_url }}" class="button primary">{{ site.data.buttons[page.layout].primary.text }}</a></li>
+          </ul>
+
+        </div>
+        {% if page.layout == 'landing' %}
+          <a href="{{ site.data.buttons.landing.arrow.link }}" class="more scrolly">{{ site.data.buttons.landing.arrow.text }}</a>
+        {% endif %}
+      </section>
+
+      {% if page.layout == 'landing' %}
+
+        {% include major-text.html datafile=site.data.major-text %}
+        {% include recent-posts.html %}
+        {% include text-tiles.html datafile=site.data.text-tiles %}
+        {% include cta.html datafile=site.data.cta %}
+
+      {% endif %}
