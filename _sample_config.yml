@@ -33,6 +33,7 @@ image_source:        # the path where image files are stored; defaults to '/asse
                      # You may specify an external server as an absolute URL, e.g. "https://example.com/assets/".
 
 colors:         # Enter hex values in quotes (e.g. "#ffffff" for white) for the settings below to customize the color of...
+  body:              # the webpage body
   header:            # the site header
   footer:            # the site footer
   menu:              # the offcanvas menu

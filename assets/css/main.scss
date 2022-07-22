@@ -17,6 +17,10 @@ body, input, select, textarea {
 }
 
 // Setting custom theme colors as configured...
+body {
+  background-color: {{ site.colors.body | default: "#2e3842" }};
+}
+
 #header {
   background-color: {{ site.colors.header | default: "#2e3842" }};
 }
@@ -40,7 +44,7 @@ input[type="button"],
 button,
 .button {
   &.primary {
-    background-color: {{ site.colors.primary | default: "#ed4933" }};
+    background-color: {{ site.colors.button | default: "#ed4933" }};
     &:hover {
       background-color: lighten({{ site.colors.button | default: "#ed4933" }}, 5) !important;
     }

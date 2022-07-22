@@ -34,6 +34,7 @@ image_source:        # the path where image files are stored; defaults to '/asse
                      # NOTE: Use '/demo_images/' when building the theme's demo site.
 
 colors:         # Enter hex values in quotes (e.g. "#ffffff" for white) for the settings below to customize the color of...
+  body:              # the webpage body
   header:            # the site header
   footer:            # the site footer
   menu:              # the offcanvas menu
