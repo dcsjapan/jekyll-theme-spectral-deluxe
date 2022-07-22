@@ -19,6 +19,8 @@ language:       en # See https://www.w3schools.com/tags/ref_language_codes.asp
 
 # THEME SETTINGS
 
+theme:          jekyll-theme-spectral-deluxe
+
 index_desc:     true # This enables use of the site description (above) instead of a page title for the landing page.
                      # Leave it blank to use the page title (or just the site title when the page title is also null).
 
