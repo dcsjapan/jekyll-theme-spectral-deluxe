@@ -18,12 +18,12 @@
 		<meta name="description" content="{{ site.description }}" />
 		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 		<noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
-		{% if site.custom_css %}
-			<link rel="stylesheet" href="{{ site.custom_css | prepend: '/assets/css/' | relative_url }}" />
-		{% endif %}
-		{% if page.image %}
-			{% include image-style.html %}
-		{% endif %}
+	{% if site.custom_css %}
+		<link rel="stylesheet" href="{{ site.custom_css | prepend: '/assets/css/' | relative_url }}" />
+	{% endif %}
+	{% if page.image %}
+		{% include image-style.html %}
+	{% endif %}
 	</head>
 
   <body class="{% if page.layout == 'landing' or 'error' %}landing{% endif %} is-preload">
@@ -35,28 +35,7 @@
 
       {{ content }}
 
-			<!-- Footer -->
-      <footer id="footer">
-
-        {% if site.social_icons %}
-          <ul class="icons">
-            {% for icon in site.data.social-icons %}
-              {% assign link = icon.label | downcase | append: '_url' %}
-              {% if site[link] %}
-                <li><a href="{{ site[link] }}" class="icon {{ icon.type }}"><span class="label">{{ icon.label }}</span></a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        {% endif %}
-
-        <ul class="copyright">
-          <li>&copy; {{ site.owner }}. All rights reserved.</li>
-        </ul>
-        <ul class="copyright">
-          <li>Design by <a href="https://html5up.net">HTML5 UP</a></li>
-          <li>Adapted for Jekyll by <a href="https://github.com/dcsjapan">Dominion</a></li>
-        </ul>
-      </footer>
+			{% include footer.html %}
 
 		</div>
 

@@ -1,0 +1,22 @@
+      <!-- Footer -->
+      <footer id="footer">
+
+        {% if site.social_icons %}
+          <ul class="icons">
+            {% for icon in site.data.social-icons %}
+              {% assign link = icon.label | downcase | append: '_url' %}
+              {% if site[link] %}
+                <li><a href="{{ site[link] }}" class="icon {{ icon.type }}"><span class="label">{{ icon.label }}</span></a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <ul class="copyright">
+          <li>&copy; {{ site.owner }}. All rights reserved.</li>
+        </ul>
+        <ul class="copyright">
+          <li><a href="https://html5up.net/spectral">Spectral</a> designed by <a href="https://html5up.net">HTML5 UP</a></li>
+          <li>Adapted for Jekyll by <a href="https://github.com/dcsjapan">Dominion</a></li>
+        </ul>
+      </footer>

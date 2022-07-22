@@ -90,12 +90,13 @@ collections:
 
 # Exclude the following items from processing:
 exclude:
-  - jekyll-theme-spectral-deluxe.gemspec
+  - jekyll-theme-spectral-deluxe
   - LICENSE.txt
   - README.md
+  - demo_images
 
 # DEMO SITE BUILD SETTINGS
 
 # NOTE: Only include this demo content when building the theme's demo site.
-exclude:
-  - demo_images
+# include:
+#  - demo_images

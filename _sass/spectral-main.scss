@@ -4,7 +4,6 @@
 @import 'spectral-libs/vendor';
 @import 'spectral-libs/breakpoints';
 @import 'spectral-libs/html-grid';
-@import '/assets/css/fontawesome-all.min.css';
 
 /*
 	Spectral Deluxe for Jekyll (https://github.com/dcsjapan/jekyll-theme-spectral-deluxe)
@@ -1840,7 +1839,7 @@
 	#main {
 		> header {
 			@include padding(12em, 0);
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$bg-image}")'));
+			@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$bg-image}")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1965,7 +1964,7 @@
 
 	body.landing {
 		#page-wrapper {
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$bg-image}")'));
+			@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$bg-image}")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1986,7 +1985,7 @@
 
 			#banner,
 			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$bg-image}")'));
+				@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$bg-image}")'));
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;

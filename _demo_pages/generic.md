@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Generic Page
-subtitle: Aliquam ut ex ut interdum donec amet imperdiet eleifend
+subtitle: The blog page and posts use this layout too!
 ---
 
 ### Lorem ipsum dolor

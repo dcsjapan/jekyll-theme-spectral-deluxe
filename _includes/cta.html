@@ -10,7 +10,7 @@
 
           <ul class="actions stacked">
             {% for button in include.datafile.buttons limit: 10 %}
-              <li><a href="{{ button.link }}" class="button {{ button.style }}">{{ button.text }}</a></li>
+              <li><a href="{{ button.link | relative_url }}" class="button {{ button.style }}">{{ button.text }}</a></li>
             {% endfor %}
           </ul>
 
