@@ -1,3 +1,12 @@
 ---
 ---
 @import 'spectral-noscript';
+
+// Setting custom theme colors as configured...
+#header {
+  background-color: {{ site.colors.header | default: "#2e3842" }};
+}
+
+#menu {
+  background-color: {{ site.colors.menu | default: "#21b2a6" }};
+}
