@@ -3,7 +3,8 @@
 @import 'spectral-noscript';
 
 // Setting custom theme colors as configured...
-#header {
+#header,
+#header.alt {
   background-color: {{ site.colors.header | default: "#2e3842" }};
 }
 

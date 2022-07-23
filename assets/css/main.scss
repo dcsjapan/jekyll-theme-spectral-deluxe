@@ -19,9 +19,7 @@ body, input, select, textarea {
 }
 
 // Setting custom theme colors as configured...
-body {
-  background-color: {{ site.colors.body | default: "#2e3842" }};
-}
+body,
 #banner:after {
   background-color: {{ site.colors.body | default: "#2e3842" }};
 }
@@ -30,13 +28,9 @@ body {
   background-color: {{ site.colors.header | default: "#2e3842" }};
 }
 
-#footer {
+#footer,
+body.landing #footer {
   background-color: {{ site.colors.footer | default: "#2e3842" }};
-}
-body.landing {
-  #footer {
-    background-color: darken(transparentize({{ site.colors.footer | default: "#2e3842" }}, 0.1), 8);
-  }
 }
 
 #menu {
